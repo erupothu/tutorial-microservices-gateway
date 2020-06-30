@@ -1,17 +1,17 @@
 # tutorial-microservices-gateway
 
-Gateway Server
+<strong>Gateway Server</strong>
 
 spring-cloud-starter-netflix-hystrix (for circuit break and fallback)<br>
 spring-cloud-starter-gateway (centralised routing to connect to microservices)
 
 spring-cloud-starter-netflix-eureka-client (Discovery and registration for microservices)
 
-Eureka Server
+<strong>Eureka Server</strong>
 
 spring-cloud-starter-netflix-eureka-server (Discovery and registration for microservices)
 
-Book and Student microservices
+<strong>Book and Student microservices</strong>
 
 spring-boot-starter-test (integration testing)
 
@@ -31,7 +31,7 @@ springdoc-openapi-ui ( microservice documentation api docs)
 
 org.projectlombok (for boiler plate code by removing most of code like setters, getters, constructors etc)
 
-Extra:
+<strong>Extra:</strong>
 
 Exception Handling
 
