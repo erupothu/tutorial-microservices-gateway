@@ -2,8 +2,7 @@
 
 Gateway Server
 
-spring-cloud-starter-netflix-hystrix (for circuit break and fallback)
-
+spring-cloud-starter-netflix-hystrix (for circuit break and fallback)<br>
 spring-cloud-starter-gateway (centralised routing to connect to microservices)
 
 spring-cloud-starter-netflix-eureka-client (Discovery and registration for microservices)
