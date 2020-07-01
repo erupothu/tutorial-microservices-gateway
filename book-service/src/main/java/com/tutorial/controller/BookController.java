@@ -83,6 +83,18 @@ public class BookController implements CommonController<BookEntity> {
 		return ResponseEntity.ok("invalid request");
 	}
 	
-	
+	public ResponseEntity<List<String>> sessionManagement(String msg, HttpServletRequest request) {
+		// TODO Auto-generated method stub
+		@SuppressWarnings("unchecked")
+		List<String> messages = (List<String>) request.getSession().getAttribute("MY_SESSION_MESSAGES");
+		if (messages == null) {
+			messages = new ArrayList();
+			request.getSession().setAttribute("MY_SESSION_MESSAGES", messages);
+		}
+		messages.add("session: "+ request.getSession().getId() + " and msg:" + msg);
+		request.getSession().setAttribute("MY_SESSION_MESSAGES", messages);
+		
+		return ResponseEntity.ok(messages);
+	}
 
 }
