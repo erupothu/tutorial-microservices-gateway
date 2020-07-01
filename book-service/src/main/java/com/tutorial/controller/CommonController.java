@@ -35,5 +35,8 @@ public interface CommonController<T> {
 	
 	@GetMapping("/invalid")
 	ResponseEntity<String> invalid();
+	
+	@GetMapping("/session/{msg}")
+	ResponseEntity<List<String>> sessionManagement(@PathVariable String msg, HttpServletRequest request);
 
 }
