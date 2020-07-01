@@ -30,5 +30,16 @@ AOP<br>
 Interceptors<br>
 Cors config<br>
 
+<strong>install mysql-server in ubuntu:</strong>
+echo "mysql-server mysql-server/root_password password ThePassword@1" | sudo debconf-set-selections 
+echo "mysql-server mysql-server/root_password_again password ThePassword@1" | sudo debconf-set-selections
+sudo apt-get install mysql-server
+
+mysql -u root -p
+ThePassword@1
+
+
+
+
 
 
